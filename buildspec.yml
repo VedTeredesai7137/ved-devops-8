@@ -3,13 +3,14 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo Installing...
   build:
     commands:
-      - echo Build started
-      - mkdir build
-      - cp index.html build/
+      - echo Building project...
+      - mkdir output
+      - cp index.html output/
+
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+  base-directory: output
